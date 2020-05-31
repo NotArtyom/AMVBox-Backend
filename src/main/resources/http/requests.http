@@ -1,0 +1,36 @@
+POST http://localhost/signIn
+Content-Type: application/json
+
+{
+  "email" : "your.tyoma.ivanov@gmail.com",
+  "password": "123456"
+}
+
+###
+
+POST http://localhost/signUp
+Content-Type: application/json
+
+{
+  "email" : "notyour.tyoma.ivanov@gmail.com",
+  "name" : "notTyoma",
+  "surname" : "notIvanov",
+  "password": "123456"
+}
+
+###
+
+GET http://localhost/users
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzOCIsIm5hbWUiOiJNYXJzZWwiLCJyb2xlIjoiVVNFUiJ9.WMLPlhJde_d2QbAiYwPutOLBOuc7NV4cLLq9O5BRAdQ
+
+###
+
+DELETE http://localhost/users/39
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzOCIsIm5hbWUiOiJNYXJzZWwiLCJyb2xlIjoiQURNSU4ifQ.r3PxYzFY68eqyPgUEGXz0BMsj6Ej2ZU9yqCHJ4xqsuY
+
+###
+
+GET http://localhost/self
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzOCIsIm5hbWUiOiJNYXJzZWwiLCJyb2xlIjoiQURNSU4ifQ.r3PxYzFY68eqyPgUEGXz0BMsj6Ej2ZU9yqCHJ4xqsuY
+
+###
